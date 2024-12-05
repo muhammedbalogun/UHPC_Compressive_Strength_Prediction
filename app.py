@@ -2,10 +2,13 @@
 import streamlit as st
 import joblib
 import numpy as np
+import os
 
 # Load models
-rf_model = joblib.load("./models/rf_gcv_corr.pkl")
-xgb_model = joblib.load("./models/xgb_gcv_corr.pkl")
+model_path_rf = os.path.join(os.path.dirname(__file__), 'models', 'rf_gcv_corr.pkl')
+model_path_xgb = os.path.join(os.path.dirname(__file__), 'models', 'xgb_gcv_corr.pkl')
+rf_model = joblib.load(model_path_rf)
+xgb_model = joblib.load(model_path_xgb)
 
 # Streamlit App
 models = {
