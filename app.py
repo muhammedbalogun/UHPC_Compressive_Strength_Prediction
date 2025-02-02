@@ -39,7 +39,7 @@ feature_names = [
 # Input fields for the features
 features = []
 for feature_name in feature_names:
-    feature_value = st.number_input(f"Enter {feature_name}:", key=feature_name)
+    feature_value = st.number_input(f"{feature_name}:", key=feature_name)
     features.append(feature_value)
 
 # Predict button
