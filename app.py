@@ -46,5 +46,5 @@ for feature_name in feature_names:
 if st.button("Predict"):
     input_data = np.array([features]).reshape(1, -1)  # Ensure proper shape
     prediction = selected_model.predict(input_data)
-    st.write(f"Selected Model: {model_name}")
-    st.write(f"Predicted Target: {prediction[0]:.2f}")
+    #st.write(f"Selected Model: {model_name}")
+    st.write(f"Compressive Strength Predicted using {model_name}: {prediction[0]:.2f} MPa")
