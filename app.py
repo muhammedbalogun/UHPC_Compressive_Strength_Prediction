@@ -17,7 +17,7 @@ models = {
 }
 
 # Streamlit App
-st.title("UHPC Compression Strength Predictions")
+st.title("UHPC Compressive Strength Predictions")
 #st.write("Select a model and provide input features to get predictions.")
 
 # Dropdown to select the model
