@@ -12,7 +12,7 @@ xgb_model = joblib.load(model_path_xgb)
 
 # Streamlit App
 models = {
-    "Xgboost Regression": xgb_model.best_estimator_,
+    "Xgboost": xgb_model.best_estimator_,
     "Random Forest": rf_model.best_estimator_,
 }
 
